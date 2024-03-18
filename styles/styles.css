@@ -46,25 +46,46 @@ p {
     font-weight: bold;
 }
 
-.amenities-section {
+.gallery-section {
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
 
-.amenities-header {
-    text-align: center;
+.gallery-header {
     margin-bottom: 30px;
+    color: #2a2a2a;
 }
 
-.amenities-section p {
+.comiunities-group {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
     text-align: center;
+    justify-content: space-around;
+    display: flex;
 }
 
-.amenities-group {
-    display: flex;
-    justify-content: space-around; 
-    margin-bottom: 20px; 
+.comiunitie {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+}
+
+.comiunitie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.comiunitie img {
+    width: 300px;
+    text-align: center;
 }
 
 .amenities-section {
@@ -80,9 +101,13 @@ p {
 }
 
 .amenities-group {
-    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+    text-align: center;
     justify-content: space-around;
-    flex-wrap: wrap; /* Asegura responsividad */
+    display: flex;
 }
 
 .amenity {
@@ -110,7 +135,7 @@ p {
 }
 
 .amenity p {
-    color: #666;
+    color: #ffffff;
 }
 
 .amenity {
@@ -139,6 +164,8 @@ p {
     height: auto;
     padding: 20px;
 }
+
+
 
 .main-header {
     text-align: center;
@@ -179,7 +206,6 @@ p {
 }
 
 .contact-info, .contact-form, .map {
-    margin-bottom: 20px;
 }
 
 input[type=text], input[type=email], textarea {
@@ -212,4 +238,8 @@ footer {
     color: white;
     text-align: center;
     padding: 50px;
+}
+
+footer p {
+    color: white;
 }
