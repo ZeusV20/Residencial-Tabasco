@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #87CEEB;
+    background-color: #87CEEB !important;
 }
 
 .main-header {
@@ -13,7 +13,7 @@ body {
 }
 
 .navbar-brand, .nav-link {
-    color: #d4af37 !important;
+    color: #ffffff !important;
 }
 
 
@@ -21,6 +21,12 @@ body {
     width: 100%;
     height: auto;
     opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    padding-right: 30px;
 }
 
 h1, h2 {
