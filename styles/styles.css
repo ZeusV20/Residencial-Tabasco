@@ -200,14 +200,6 @@ p {
     height: auto;
 }
 
-#contact {
-    text-align: center;
-    padding: 20px;
-}
-
-.contact-info, .contact-form, .map {
-}
-
 input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px 20px;
@@ -229,9 +221,50 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Oscurece el botón al pasar el mouse */
 }
 
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border-color: #4CAF50; /* Cambia el color del borde al enfocarse */
+    outline: none;
+}
+
+#contact .contact-container {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio de su contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 20px; /* Espacio entre el mapa y la información de contacto */
+}
+
+.map-edit iframe {
+    width: 902px; /* Ancho específico para el mapa */
+    height: 896px; /* Altura específica para el mapa */
+}
+
+.contact-inf, .contact-form {
+    width: calc(100% - 902px - 20px); /* Calcula el ancho restante descontando el ancho del mapa y el gap */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido de contacto en una columna */
+    text-align: center;
+    gap: 20px;
+}
+
+.social-links-container {
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 40px;
+}
+
+
+.contact-inf p {
+    color: #000;
+}
 
 footer {
     background-color: #333;
